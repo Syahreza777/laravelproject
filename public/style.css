@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+    /* font yang saya gunakan */
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    /* membuat animasi scroll menjadi smooth / mulus */
+    scroll-behavior: smooth;
+}
+
+/*
+    KHUSUS
+*/
+
+.text-malam {
+    /* text untuk deskripsi, <h>, dll*/
+    color: #323946;
+}
+
+.text-color {
+    /* warna text andalan */
+    color: #20b2aa;
+}
+
+/*
+    NAVBAR
+*/
+nav {
+    /* mengatur design navbar */
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
+    position: fixed;
+}
+
+nav.scrolled {
+    /* animasi navbar ketika di scroll */
+    background-color: #1f242d;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.1);
+}
+
+nav.scrolled .navbar-nav .nav-item .nav-link {
+    /* animasi nav-link ketika di scroll */
+    color: #e0e0e0;
+    transition: 0.3s ease;
+}
+
+nav.scrolled .navbar-nav .nav-item .nav-link:hover {
+    /* nav link ketika di hover pada saat mode scroll */
+    color: #20b2aa;
+}
+
+nav.scrolled .navbar-brand {
+    /* animasi navbar-brand ketika di scroll */
+    color: #e0e0e0;
+    transition: 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    /* warna text link navbar */
+    color: black;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    /* animasi ketika text link navbar dihover */
+    color: #20b2aa;
+    transition: 0.3s;
+}
+
+/*
+    FOOTER
+*/
+
+footer {
+    /* background color milik footer */
+    background: #1f242d;
+}
+
+.text-footer {
+    /* warna text di footer */
+    color: #ccc;
+}
+
+/*
+    JUMBOTRON
+*/
+
+.fab {
+    /* mengatur icon media social*/
+    font-size: 20px;
+    margin-right: 10px;
+    color: #323946;
+    transition: color 0.3s;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fab:hover,
+.icons:hover {
+    /* icon media social ketika dihover */
+    transform: translateY(-5px);
+    color: #20b2aa;
+    text-decoration: none;
+}
+
+.bgku {
+    /* background jumbotron */
+    background: whitesmoke;
+    padding: 4rem 0;
+}
+
+.jumbotron {
+    /* menghilangkan jarak antara jumbotron dengan section about agar tidak memiliki celah */
+    margin-bottom: 0;
+}
+
+.jmb-text {
+    /* memberi jarak antara text jumbotron dengan navbar*/
+    margin-top: 12%;
+}
+
+.img-post {
+    /* memberi jarak sebelah kanan img dijumbotron */
+    margin-right: 15%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/*
+    HOME SECTION
+*/
+
+.about-section {
+    /* section about */
+    padding: 4rem 0;
+}
+
+.garden-section {
+    /* section gardens */
+    background: whitesmoke;
+    padding: 4rem 0;
+}
+
+.speciality-section {
+    /* section speciality */
+    background: white;
+    padding: 4rem 0;
+}
+
+.btn-custom {
+    /* design button learn more */
+    background-color: #20b2aa;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    height: 50px;
+}
+
+.btn-custom:hover {
+    /* animasi ketika button learn more di hover */
+    background-color: transparent;
+    color: #20b2aa;
+    border: 1px solid #20b2aa;
+    transition: 0.3s;
+}
+
+.btn-seemore {
+    /* design button see more */
+    background-color: #20b2aa;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.1);
+}
+
+.btn-seemore:hover {
+    /* animasi ketika button see more di hover */
+    background-color: transparent;
+    color: #20b2aa;
+    border: 1px solid #20b2aa;
+    transition: 0.3s;
+    box-shadow: 0px 9px 9px white;
+}
+
+.card {
+    /* design card milik our garden dan speciality */
+    cursor: pointer;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    /* animasi card ketika dihover */
+    transform: scale(1.02);
+    text-decoration: none;
+}
+
+.img-thumbnail {
+    /* design img milik about section */
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.img-thumbnail:hover {
+    /* animasi ketika img dihover */
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.circle {
+    /* membuat border lingkaran untuk icon pada garden section */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    /* mengatur ukuran img yang ada didalam circle */
+    width: 52%;
+    height: auto;
+}
+
+.card-title i {
+    /* mengatur icon arrow */
+    font-size: 0.8em;
+    color: #20b2aa;
+}
+
+/* 
+ABOUT-SECTION 
+*/
+
+.card-about {
+    /* design card milik our garden dan speciality */
+    cursor: pointer;
+    box-shadow: 0px 9px 9px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: transform 0.3s;
+}
+
+.card-about:hover {
+    /* animasi card ketika dihover */
+    transform: scale(1.02);
+    text-decoration: none;
+}
+
+.img-thumbnail-about {
+    /* design img milik about section */
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.img-thumbnail-about:hover {
+    /* animasi ketika img dihover */
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.ml {
+    margin-left: 280px;
+}
+
+.text-pagi {
+    /* text untuk deskripsi, <h>, dll*/
+    color: #e0e0e0;
+}
+
+.about-us {
+    color: #fff;
+    text-align: center;
+}
+
+.card-img-top {
+    height: 450px;
+    object-fit: cover;
+}
+
+.circle-about {
+    /* membuat border lingkaran untuk icon pada garden section */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(32, 178, 170, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-about p {
+    color: #20b2aa;
+    margin: 0;
+}
+
+.what-we-do-section {
+    background: whitesmoke;
+    padding: 4rem 0;
+}
+
+.pak-kebon-section {
+    padding: 4rem 0;
+}
+
+.custom-pak-kebon {
+    color: #fff;
+    background-color: #1f242d;
+    position: relative;
+    z-index: 2;
+}
+
+.card-pak-kebon {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-pak-kebon img {
+    transition: transform 0.3s;
+    z-index: 1; /* Mengatur z-index untuk memastikan gambar berada di atas card body */
+}
+
+.card-pak-kebon:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*
+    GARDEN SECTION
+*/
+
+.ourgarden-section {
+    /* section speciality */
+    background: white;
+    padding: 4rem 0;
+}
+
+.ukuran {
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #ddd; /* Border tipis dengan warna abu-abu lembut */
+    border-radius: 8px; /* Sudut melengkung untuk kesan lebih halus */
+}
+
+.custom-gallery {
+    color: #1f242d;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.card-gallery {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #ccc; */
+}
+
+.card-gallery img {
+    transition: transform 0.3s;
+    z-index: 1; /* Mengatur z-index untuk memastikan gambar berada di atas card body */
+}
+
+.card-gallery:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*
+    CONTACT SECTION
+*/
+
+.contact-section {
+    /* section about */
+    padding: 4rem 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex-basis: calc(50% - 20px); /* 50% lebar dengan sedikit ruang di antara */
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #20b2aa;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
