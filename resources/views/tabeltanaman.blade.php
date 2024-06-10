@@ -1,13 +1,13 @@
     @extends('layout.admin')
     @section('konten')
 
-    <div class="container mt-5 mb-5" style="padding-top: 60px">
+    <div class="container mt-5 mb-5 tabelrespon">
     <div class="row"> 
-      <div class="col">
+      <div class="col-md-12">
         <div class="card">
           <div class="card-header"><b>Data Tanaman</b></div>
           <div class="card-body">
-
+            <div class="table-responsive">
             <table class="table table-striped mt-3">
               <thead>
                 <tr>
@@ -37,6 +37,7 @@
                 @endforeach
               </tbody>
             </table>
+            </div>
           </div>
              <div class="card-footer" style="background-color: white;">
                            <a href="{{url('tabeltanaman/tambah')}}" class="btn btn-outline-primary">Tambah Data</a>

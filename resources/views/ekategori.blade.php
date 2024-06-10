@@ -4,7 +4,7 @@
      <form action="{{url('tabelkategori/update', $cari->id_kategori)}}" method="post" enctype="multipart/form-data">
       @csrf
       <input type="hidden" name="_token" value="{{csrf_token()}}">
-    <div class="container mt-5 mb-5" style="padding-top: 60px">
+    <div class="container mt-5 mb-5 tabelrespon">
     <div class="row"> 
       <div class="col">
         <div class="card">

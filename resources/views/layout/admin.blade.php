@@ -6,29 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Admin`Ku</title>
-    <link rel="stylesheet" href="{{asset('dist/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('style.css')}}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('assets/vendors/bootstrap/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/vendors/boxicons/css/boxicons.min.css')}}">
 </head>
 
 <body>
 
 
 <!-- NAVBAR  -->
-    <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background-color: #1f242d">
-        <div class="container pt-1 pb-1">
-            <a class="navbar-brand" href="#" style="color: #fff"><b>Admin<span class="text-color">`Ku</span></b></a>
-            <ul class="navbar-nav ml-auto">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <div class="container py-1">
+            <a class="navbar-brand fw-bold" href="#">Admin<span class="text-color">`Ku</span></a>
+            <div class="toggle-menu" id="toggle-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-nav ml-auto gap-4" id="navbar-nav">
                 <li class="nav-item active mr-4">
-                    <a class="nav-link" href="tabeltanaman" style="color: #fff">Tanaman</a>
+                    <a class="nav-link" href="tabeltanaman">Tanaman</a>
                 </li>
                 <li class="nav-item active mr-4">
-                    <a class="nav-link" href="tabelkategori" style="color: #fff">Kategori</a>
+                    <a class="nav-link" href="tabelkategori">Kategori</a>
                 </li>
                 <!-- <li class="nav-item active mr-4">
-                    <a class="nav-link" href="contact">Contact</a>
-                </li> -->
+                            <a class="nav-link" href="contact">Contact</a>
+                            </li> -->
             </ul>
         </div>
     </nav>
@@ -38,18 +42,18 @@
       <footer>
         <div class="container pb-5 pt-5">
             <div class="row">
-                <div class="col-md-5">
-                    <h4 class="pb-2" style="color: #e0e0e0"><b>Admin <span class="text-color">`Ku</span></b></h3>
-                        <p class="text-footer">Web ini berisi data-data tentang Aneka Maritim & Keanekaragaman Hayati di SMKN 2
+                <div class="col-md-12 col-lg-5">
+                    <h4 class="pb-2" style="color: #e0e0e0"><b>Garden <span class="text-color">`Ku</span></b></h3>
+                        <p class="text-footer">Web ini membahas tentang Aneka Maritim & Keanekaragaman Hayati di SMKN 2
                             Kraksaan</p>
-                        <p class="text-footer pt-4">&copy; 2023 Website Aneka Bahari & Hayati SMKN 2 Kraksaan</p>
+                        <p class="text-footer pt-4 pb-4">&copy; 2023 Website Aneka Bahari & Hayati SMKN 2 Kraksaan</p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-12 col-lg-3">
                     <h4 class="text-color pb-2"><b>Halaman</b></h4>
                     <p class="text-footer">- Tanaman</p>
                     <p class="text-footer">- Kategori</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-12 col-lg-4">
                     <h4 class="text-color pb-2"><b>Kontak</b></h4>
                     <p class="text-footer">
                         <i class="fas fa-search-location mr-4"></i>Jl. Diponegoro No 05
@@ -65,7 +69,7 @@
         </div>
     </footer>
 
-    <script src="{{asset('script.js')}}"></script>
+    <script src="{{asset('assets/js/script.js')}}"></script>
 
     </body>
 
